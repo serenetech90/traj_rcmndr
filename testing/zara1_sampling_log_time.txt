@@ -1,0 +1,464 @@
+/home/serene/anaconda3/envs/sgan-master/bin/python /home/serene/PycharmProjects/multimodaltraj_2/sample.py
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-3
+OMP: Info #156: KMP_AFFINITY: 4 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 1 packages x 2 cores/pkg x 2 threads/core (2 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 1 thread 1 
+OMP: Info #250: KMP_AFFINITY: pid 1663 tid 1663 thread 0 bound to OS proc set 0
+WARNING: Logging before flag parsing goes to stderr.
+W1118 22:29:47.152519 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:114: The name tf.InteractiveSession is deprecated. Please use tf.compat.v1.InteractiveSession instead.
+
+2019-11-18 22:29:47.153052: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2019-11-18 22:29:47.159081: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2712000000 Hz
+2019-11-18 22:29:47.159171: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x56005b026f20 executing computations on platform Host. Devices:
+2019-11-18 22:29:47.159184: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-11-18 22:29:47.159248: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+W1118 22:29:47.384760 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/helper.py:26: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W1118 22:29:47.389655 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/helper.py:41: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W1118 22:29:47.390122 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8550d03160>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:29:47.569032 140212563461888 deprecation.py:506] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W1118 22:29:47.661962 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8555308630>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:29:47.710134 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:182: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1118 22:29:47.710439 140212563461888 deprecation.py:506] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:183: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W1118 22:29:47.720229 140212563461888 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py:193: initialize_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.variables_initializer` instead.
+2019-11-18 22:29:47.725671: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W1118 22:29:47.741694 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/models/g2k_lstm_mcr.py:12: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+W1118 22:29:47.802671 140212563461888 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/ops/variables.py:2618: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Importing meta data of stored model in/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_60.ckpt-60.meta
+W1118 22:29:47.891061 140212563461888 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:216: The name tf.train.import_meta_graph is deprecated. Please use tf.compat.v1.train.import_meta_graph instead.
+
+W1118 22:29:51.711939 140212563461888 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+loading model:  ['/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_60.ckpt-60', '/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_1.ckpt-1']
+********************** SAMPLING A NEW TRAJECTORY 0 ******************************
+OMP: Info #250: KMP_AFFINITY: pid 1663 tid 1674 thread 1 bound to OS proc set 1
+wall-clock time taken by social mask grid = 0.7497720718383789 seconds
+wall-clock time taken by static mask grid = 0.0006649494171142578 seconds
+wall-clock time taken by combined mask grid = 0.30313968658447266 seconds
+OMP: Info #250: KMP_AFFINITY: pid 1663 tid 1673 thread 2 bound to OS proc set 2
+wall-clock time taken by predictive kernel = 1.6750941276550293 seconds
+Soft Attention calculation took= 0.5404586791992188 seconds
+Multi-Cued model (MCR) sampling time = 3.269237995147705 seconds
+ADE =  0.17654144399370567
+FDE =  0.5222594309722625
+Processed trajectory number :  0 out of  32  trajectories
+W1118 22:29:55.641824 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852ac1dba8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:29:55.703756 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8528b80940>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 1 ******************************
+wall-clock time taken by social mask grid = 0.8007717132568359 seconds
+wall-clock time taken by static mask grid = 0.0006031990051269531 seconds
+wall-clock time taken by combined mask grid = 0.3283970355987549 seconds
+wall-clock time taken by predictive kernel = 1.7897260189056396 seconds
+Soft Attention calculation took= 0.5859489440917969 seconds
+Multi-Cued model (MCR) sampling time = 3.5055534839630127 seconds
+ADE =  0.2420269558989435
+FDE =  0.31447820190767
+Processed trajectory number :  1 out of  32  trajectories
+W1118 22:30:00.073754 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8528aa7198>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:00.135432 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85289b5eb8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 2 ******************************
+wall-clock time taken by social mask grid = 0.7701425552368164 seconds
+wall-clock time taken by static mask grid = 0.0005700588226318359 seconds
+wall-clock time taken by combined mask grid = 0.3161330223083496 seconds
+wall-clock time taken by predictive kernel = 1.7426161766052246 seconds
+Soft Attention calculation took= 0.5851263999938965 seconds
+Multi-Cued model (MCR) sampling time = 3.414689302444458 seconds
+ADE =  0.11080864885417122
+FDE =  0.19521484805311637
+Processed trajectory number :  2 out of  32  trajectories
+W1118 22:30:04.426210 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85287ac7f0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:04.485262 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85286e0080>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 3 ******************************
+wall-clock time taken by social mask grid = 0.7946281433105469 seconds
+wall-clock time taken by static mask grid = 0.0005772113800048828 seconds
+wall-clock time taken by combined mask grid = 0.32164788246154785 seconds
+wall-clock time taken by predictive kernel = 1.756727695465088 seconds
+Soft Attention calculation took= 0.5645232200622559 seconds
+Multi-Cued model (MCR) sampling time = 3.438199520111084 seconds
+ADE =  0.1554921560300294
+FDE =  0.19474968420466351
+Processed trajectory number :  3 out of  32  trajectories
+W1118 22:30:08.810253 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852852bc18>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:08.877122 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85284af940>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 4 ******************************
+wall-clock time taken by social mask grid = 0.8147587776184082 seconds
+wall-clock time taken by static mask grid = 0.0005335807800292969 seconds
+wall-clock time taken by combined mask grid = 0.33425235748291016 seconds
+wall-clock time taken by predictive kernel = 1.7962372303009033 seconds
+Soft Attention calculation took= 0.5830297470092773 seconds
+Multi-Cued model (MCR) sampling time = 3.5289132595062256 seconds
+ADE =  0.2013063743252027
+FDE =  0.33027695067535595
+Processed trajectory number :  4 out of  32  trajectories
+W1118 22:30:13.313861 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8528924a58>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:13.373445 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8528232dd8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 5 ******************************
+wall-clock time taken by social mask grid = 0.8134651184082031 seconds
+wall-clock time taken by static mask grid = 0.0005888938903808594 seconds
+wall-clock time taken by combined mask grid = 0.3307058811187744 seconds
+wall-clock time taken by predictive kernel = 1.8639421463012695 seconds
+Soft Attention calculation took= 0.6509380340576172 seconds
+Multi-Cued model (MCR) sampling time = 3.659743309020996 seconds
+ADE =  0.24506999274844998
+FDE =  0.3490659538139188
+Processed trajectory number :  5 out of  32  trajectories
+W1118 22:30:17.949121 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852803c0f0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:18.008374 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527fb69b0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 6 ******************************
+wall-clock time taken by social mask grid = 0.8348469734191895 seconds
+wall-clock time taken by static mask grid = 0.00067901611328125 seconds
+wall-clock time taken by combined mask grid = 0.34357738494873047 seconds
+wall-clock time taken by predictive kernel = 1.95405912399292 seconds
+Soft Attention calculation took= 0.5965209007263184 seconds
+Multi-Cued model (MCR) sampling time = 3.7297866344451904 seconds
+ADE =  0.33898291482379644
+FDE =  0.6569617408882027
+Processed trajectory number :  6 out of  32  trajectories
+W1118 22:30:22.669747 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527d2edd8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:22.728044 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527cc2f60>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 7 ******************************
+wall-clock time taken by social mask grid = 0.85298752784729 seconds
+wall-clock time taken by static mask grid = 0.0008080005645751953 seconds
+wall-clock time taken by combined mask grid = 0.34811854362487793 seconds
+wall-clock time taken by predictive kernel = 1.9764676094055176 seconds
+Soft Attention calculation took= 0.6144235134124756 seconds
+Multi-Cued model (MCR) sampling time = 3.792924165725708 seconds
+ADE =  0.28253711540716264
+FDE =  0.33447885331553434
+Processed trajectory number :  7 out of  32  trajectories
+W1118 22:30:27.451654 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527abfa90>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:27.515117 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527a45320>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 8 ******************************
+wall-clock time taken by social mask grid = 0.8670077323913574 seconds
+wall-clock time taken by static mask grid = 0.0006372928619384766 seconds
+wall-clock time taken by combined mask grid = 0.35091137886047363 seconds
+wall-clock time taken by predictive kernel = 1.9415736198425293 seconds
+Soft Attention calculation took= 0.6306133270263672 seconds
+Multi-Cued model (MCR) sampling time = 3.790855884552002 seconds
+ADE =  0.2824789006709145
+FDE =  0.3941287621672754
+Processed trajectory number :  8 out of  32  trajectories
+W1118 22:30:32.246706 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85286a26d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:32.308535 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85277c76d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 9 ******************************
+wall-clock time taken by social mask grid = 0.9071700572967529 seconds
+wall-clock time taken by static mask grid = 0.0005583763122558594 seconds
+wall-clock time taken by combined mask grid = 0.37174391746520996 seconds
+wall-clock time taken by predictive kernel = 2.013383388519287 seconds
+Soft Attention calculation took= 0.6344125270843506 seconds
+Multi-Cued model (MCR) sampling time = 3.9273715019226074 seconds
+ADE =  0.15269977731439988
+FDE =  0.6240231668631806
+Processed trajectory number :  9 out of  32  trajectories
+W1118 22:30:37.221144 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527c4f7b8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:37.281429 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852754cc18>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 10 ******************************
+wall-clock time taken by social mask grid = 0.8932807445526123 seconds
+wall-clock time taken by static mask grid = 0.0007588863372802734 seconds
+wall-clock time taken by combined mask grid = 0.36585092544555664 seconds
+wall-clock time taken by predictive kernel = 1.990081787109375 seconds
+Soft Attention calculation took= 0.6381998062133789 seconds
+Multi-Cued model (MCR) sampling time = 3.888291358947754 seconds
+ADE =  0.1626688865522877
+FDE =  0.3328984573592509
+Processed trajectory number :  10 out of  32  trajectories
+W1118 22:30:42.146721 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85272c59e8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:42.205706 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85272db7b8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 11 ******************************
+wall-clock time taken by social mask grid = 0.9046239852905273 seconds
+wall-clock time taken by static mask grid = 0.0005993843078613281 seconds
+wall-clock time taken by combined mask grid = 0.3713104724884033 seconds
+wall-clock time taken by predictive kernel = 2.012402057647705 seconds
+Soft Attention calculation took= 0.6506853103637695 seconds
+Multi-Cued model (MCR) sampling time = 3.939725399017334 seconds
+ADE =  0.3421467041863059
+FDE =  0.3432759061686617
+Processed trajectory number :  11 out of  32  trajectories
+W1118 22:30:47.121613 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852705bbe0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:47.321434 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85270dadd8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 12 ******************************
+wall-clock time taken by social mask grid = 0.9210267066955566 seconds
+wall-clock time taken by static mask grid = 0.0005819797515869141 seconds
+wall-clock time taken by combined mask grid = 0.37537336349487305 seconds
+wall-clock time taken by predictive kernel = 2.106208562850952 seconds
+Soft Attention calculation took= 0.6618847846984863 seconds
+Multi-Cued model (MCR) sampling time = 4.065190315246582 seconds
+ADE =  0.33095893994709713
+FDE =  0.393184424125494
+Processed trajectory number :  12 out of  32  trajectories
+W1118 22:30:52.388525 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8527d2eb70>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:52.446768 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8526dd1d30>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 13 ******************************
+wall-clock time taken by social mask grid = 0.946462869644165 seconds
+wall-clock time taken by static mask grid = 0.004461050033569336 seconds
+wall-clock time taken by combined mask grid = 0.38796257972717285 seconds
+wall-clock time taken by predictive kernel = 2.13881254196167 seconds
+Soft Attention calculation took= 0.7013075351715088 seconds
+Multi-Cued model (MCR) sampling time = 4.179120063781738 seconds
+ADE =  0.18431215770128256
+FDE =  0.195027914294302
+Processed trajectory number :  13 out of  32  trajectories
+W1118 22:30:57.628411 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8526c5b080>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:30:57.691748 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8526b65748>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 14 ******************************
+wall-clock time taken by social mask grid = 0.9428508281707764 seconds
+wall-clock time taken by static mask grid = 0.0006148815155029297 seconds
+wall-clock time taken by combined mask grid = 0.3865635395050049 seconds
+wall-clock time taken by predictive kernel = 2.079319477081299 seconds
+Soft Attention calculation took= 0.6752109527587891 seconds
+Multi-Cued model (MCR) sampling time = 4.084662914276123 seconds
+ADE =  0.1868188029191524
+FDE =  0.3210525881800894
+Processed trajectory number :  14 out of  32  trajectories
+W1118 22:31:02.796810 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852695e860>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:02.854813 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85268deba8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 15 ******************************
+wall-clock time taken by social mask grid = 0.9795315265655518 seconds
+wall-clock time taken by static mask grid = 0.0006570816040039062 seconds
+wall-clock time taken by combined mask grid = 0.38774824142456055 seconds
+wall-clock time taken by predictive kernel = 2.186091899871826 seconds
+Soft Attention calculation took= 0.7221770286560059 seconds
+Multi-Cued model (MCR) sampling time = 4.276313543319702 seconds
+ADE =  0.1315859675440511
+FDE =  0.4546176487821195
+Processed trajectory number :  15 out of  32  trajectories
+W1118 22:31:08.168204 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85266f2c50>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:08.227179 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852663b6d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 16 ******************************
+wall-clock time taken by social mask grid = 0.9934861660003662 seconds
+wall-clock time taken by static mask grid = 0.0006732940673828125 seconds
+wall-clock time taken by combined mask grid = 0.425159215927124 seconds
+wall-clock time taken by predictive kernel = 2.1503331661224365 seconds
+Soft Attention calculation took= 0.7081289291381836 seconds
+Multi-Cued model (MCR) sampling time = 4.277890682220459 seconds
+ADE =  0.18581539723602652
+FDE =  0.6233576151240079
+Processed trajectory number :  16 out of  32  trajectories
+W1118 22:31:13.550199 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8526ad2ac8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:13.610783 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85263e5fd0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 17 ******************************
+wall-clock time taken by social mask grid = 0.9752852916717529 seconds
+wall-clock time taken by static mask grid = 0.0006606578826904297 seconds
+wall-clock time taken by combined mask grid = 0.5707402229309082 seconds
+wall-clock time taken by predictive kernel = 2.8592240810394287 seconds
+Soft Attention calculation took= 0.7882754802703857 seconds
+Multi-Cued model (MCR) sampling time = 5.194302082061768 seconds
+ADE =  0.3378478455788902
+FDE =  0.6777298505904613
+Processed trajectory number :  17 out of  32  trajectories
+W1118 22:31:19.905303 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85268ea160>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:19.969116 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8526128780>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 18 ******************************
+wall-clock time taken by social mask grid = 1.042172908782959 seconds
+wall-clock time taken by static mask grid = 0.0006041526794433594 seconds
+wall-clock time taken by combined mask grid = 0.4241344928741455 seconds
+wall-clock time taken by predictive kernel = 2.366771697998047 seconds
+Soft Attention calculation took= 0.7257311344146729 seconds
+Multi-Cued model (MCR) sampling time = 4.5595245361328125 seconds
+ADE =  0.41940735812678226
+FDE =  1.9231039813561823
+Processed trajectory number :  18 out of  32  trajectories
+W1118 22:31:25.683751 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525ee0f98>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:25.750275 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525ef5f98>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 19 ******************************
+wall-clock time taken by social mask grid = 1.1146230697631836 seconds
+wall-clock time taken by static mask grid = 0.0007374286651611328 seconds
+wall-clock time taken by combined mask grid = 0.41388583183288574 seconds
+wall-clock time taken by predictive kernel = 2.311734676361084 seconds
+Soft Attention calculation took= 0.7336864471435547 seconds
+Multi-Cued model (MCR) sampling time = 4.5747785568237305 seconds
+ADE =  0.3399009565669523
+FDE =  1.4832492379792903
+Processed trajectory number :  19 out of  32  trajectories
+W1118 22:31:31.406809 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525cf2c88>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:31.476553 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525bd57b8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 20 ******************************
+wall-clock time taken by social mask grid = 1.0230934619903564 seconds
+wall-clock time taken by static mask grid = 0.0007719993591308594 seconds
+wall-clock time taken by combined mask grid = 0.4211850166320801 seconds
+wall-clock time taken by predictive kernel = 2.3360977172851562 seconds
+Soft Attention calculation took= 0.7502970695495605 seconds
+Multi-Cued model (MCR) sampling time = 4.531562328338623 seconds
+ADE =  0.22518566106930732
+FDE =  0.5325774386661027
+Processed trajectory number :  20 out of  32  trajectories
+W1118 22:31:37.184664 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85260fc7f0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:37.244087 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852593f438>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 21 ******************************
+wall-clock time taken by social mask grid = 1.1140141487121582 seconds
+wall-clock time taken by static mask grid = 0.0007104873657226562 seconds
+wall-clock time taken by combined mask grid = 0.5920984745025635 seconds
+wall-clock time taken by predictive kernel = 2.8451952934265137 seconds
+Soft Attention calculation took= 1.0051090717315674 seconds
+Multi-Cued model (MCR) sampling time = 5.5572662353515625 seconds
+ADE =  0.2571481257274825
+FDE =  0.49561403339345994
+Processed trajectory number :  21 out of  32  trajectories
+W1118 22:31:44.045365 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525dff828>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:44.173457 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525700f60>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 22 ******************************
+wall-clock time taken by social mask grid = 1.1341726779937744 seconds
+wall-clock time taken by static mask grid = 0.0011417865753173828 seconds
+wall-clock time taken by combined mask grid = 0.5122590065002441 seconds
+wall-clock time taken by predictive kernel = 2.748023271560669 seconds
+Soft Attention calculation took= 0.7945935726165771 seconds
+Multi-Cued model (MCR) sampling time = 5.1903464794158936 seconds
+ADE =  0.1658967802255701
+FDE =  0.44473099557735074
+Processed trajectory number :  22 out of  32  trajectories
+W1118 22:31:50.881453 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85254f9ba8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:50.958032 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852548c828>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 23 ******************************
+wall-clock time taken by social mask grid = 1.1619336605072021 seconds
+wall-clock time taken by static mask grid = 0.0007462501525878906 seconds
+wall-clock time taken by combined mask grid = 0.454287052154541 seconds
+wall-clock time taken by predictive kernel = 2.50248646736145 seconds
+Soft Attention calculation took= 0.8141562938690186 seconds
+Multi-Cued model (MCR) sampling time = 4.9337263107299805 seconds
+ADE =  0.1661967432740301
+FDE =  0.42357721462379694
+Processed trajectory number :  23 out of  32  trajectories
+W1118 22:31:57.192512 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85252104e0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:31:57.264126 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525288e48>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 24 ******************************
+wall-clock time taken by social mask grid = 1.1922557353973389 seconds
+wall-clock time taken by static mask grid = 0.0006253719329833984 seconds
+wall-clock time taken by combined mask grid = 0.4487464427947998 seconds
+wall-clock time taken by predictive kernel = 3.5228004455566406 seconds
+Soft Attention calculation took= 1.3000380992889404 seconds
+Multi-Cued model (MCR) sampling time = 6.464609622955322 seconds
+ADE =  0.14748669733003802
+FDE =  0.2636316542210789
+Processed trajectory number :  24 out of  32  trajectories
+W1118 22:32:04.898822 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525ee0be0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:05.038514 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524facd68>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 25 ******************************
+wall-clock time taken by social mask grid = 1.4713332653045654 seconds
+wall-clock time taken by static mask grid = 0.0007908344268798828 seconds
+wall-clock time taken by combined mask grid = 0.5037758350372314 seconds
+wall-clock time taken by predictive kernel = 3.6603281497955322 seconds
+Soft Attention calculation took= 1.2990765571594238 seconds
+Multi-Cued model (MCR) sampling time = 6.935460567474365 seconds
+ADE =  0.10804059838517968
+FDE =  0.18963122348263783
+Processed trajectory number :  25 out of  32  trajectories
+W1118 22:32:13.727566 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8525441978>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:13.861858 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524d1acc0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 26 ******************************
+wall-clock time taken by social mask grid = 1.5433101654052734 seconds
+wall-clock time taken by static mask grid = 0.0009164810180664062 seconds
+wall-clock time taken by combined mask grid = 0.6363775730133057 seconds
+wall-clock time taken by predictive kernel = 3.560513496398926 seconds
+Soft Attention calculation took= 1.28055739402771 seconds
+Multi-Cued model (MCR) sampling time = 7.021831750869751 seconds
+ADE =  0.23309590836445915
+FDE =  0.2809417535281223
+Processed trajectory number :  26 out of  32  trajectories
+W1118 22:32:22.695486 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524b21b00>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:22.812210 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524aa8ac8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 27 ******************************
+wall-clock time taken by social mask grid = 1.4086122512817383 seconds
+wall-clock time taken by static mask grid = 0.0010950565338134766 seconds
+wall-clock time taken by combined mask grid = 0.5628182888031006 seconds
+wall-clock time taken by predictive kernel = 3.125102996826172 seconds
+Soft Attention calculation took= 0.8603627681732178 seconds
+Multi-Cued model (MCR) sampling time = 5.9581298828125 seconds
+ADE =  0.23926980709097156
+FDE =  0.635738546343372
+Processed trajectory number :  27 out of  32  trajectories
+W1118 22:32:30.927257 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524f93c50>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:31.035446 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85247eb8d0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 28 ******************************
+wall-clock time taken by social mask grid = 1.259904384613037 seconds
+wall-clock time taken by static mask grid = 0.0007543563842773438 seconds
+wall-clock time taken by combined mask grid = 0.4833376407623291 seconds
+wall-clock time taken by predictive kernel = 2.7690916061401367 seconds
+Soft Attention calculation took= 0.9114654064178467 seconds
+Multi-Cued model (MCR) sampling time = 5.424678087234497 seconds
+ADE =  0.12851770615821576
+FDE =  0.2761738625334977
+Processed trajectory number :  28 out of  32  trajectories
+W1118 22:32:37.804784 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524699208>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:37.871474 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f8524593860>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 29 ******************************
+wall-clock time taken by social mask grid = 1.4667942523956299 seconds
+wall-clock time taken by static mask grid = 0.0015337467193603516 seconds
+wall-clock time taken by combined mask grid = 0.5139205455780029 seconds
+wall-clock time taken by predictive kernel = 3.410808801651001 seconds
+Soft Attention calculation took= 0.8855338096618652 seconds
+Multi-Cued model (MCR) sampling time = 6.278722524642944 seconds
+ADE =  0.4319195877479946
+FDE =  0.6888371797785423
+Processed trajectory number :  29 out of  32  trajectories
+W1118 22:32:45.472025 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852441a3c8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:45.527873 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852431fac8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 30 ******************************
+wall-clock time taken by social mask grid = 1.2025542259216309 seconds
+wall-clock time taken by static mask grid = 0.0006575584411621094 seconds
+wall-clock time taken by combined mask grid = 0.5030698776245117 seconds
+wall-clock time taken by predictive kernel = 2.5991923809051514 seconds
+Soft Attention calculation took= 0.8425414562225342 seconds
+Multi-Cued model (MCR) sampling time = 5.148122787475586 seconds
+ADE =  0.7365865020863989
+FDE =  1.6485021098485868
+Processed trajectory number :  30 out of  32  trajectories
+W1118 22:32:51.800446 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f852411aba8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1118 22:32:51.861004 140212563461888 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f85240a2550>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 31 ******************************
+wall-clock time taken by social mask grid = 1.2332117557525635 seconds
+wall-clock time taken by static mask grid = 0.0010094642639160156 seconds
+wall-clock time taken by combined mask grid = 0.45252537727355957 seconds
+wall-clock time taken by predictive kernel = 2.668429374694824 seconds
+Soft Attention calculation took= 0.9853270053863525 seconds
+Multi-Cued model (MCR) sampling time = 5.340662240982056 seconds
+ADE =  0.4711967017073113
+FDE =  1.365964314240197
+Processed trajectory number :  31 out of  32  trajectories
+Total mean error of the model is  0.25374837861226757
+Total final error of the model is  0.5596579857205557
+Saving results
+Saving results as .mat
+Traceback (most recent call last):
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: 'VisualizeUtils/tc_real_head_pose_z1_z2_ucy_social_lstm.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/serene/PycharmProjects/multimodaltraj_2/sample.py", line 352, in <module>
+    main()
+  File "/home/serene/PycharmProjects/multimodaltraj_2/sample.py", line 348, in main
+    scipy.io.savemat(filesave, mdict={'data': results})
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 266, in savemat
+    with _open_file_context(file_name, appendmat, 'wb') as file_stream:
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 19, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: 'VisualizeUtils/tc_real_head_pose_z1_z2_ucy_social_lstm.mat'
+
+Process finished with exit code 1
+

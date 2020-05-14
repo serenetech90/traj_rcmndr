@@ -1,0 +1,272 @@
+/home/serene/anaconda3/envs/sgan-master/bin/python /home/serene/PycharmProjects/multimodaltraj_2/sample.py
+OMP: Info #212: KMP_AFFINITY: decoding x2APIC ids.
+OMP: Info #210: KMP_AFFINITY: Affinity capable, using global cpuid leaf 11 info
+OMP: Info #154: KMP_AFFINITY: Initial OS proc set respected: 0-3
+OMP: Info #156: KMP_AFFINITY: 4 available OS procs
+OMP: Info #157: KMP_AFFINITY: Uniform topology
+OMP: Info #179: KMP_AFFINITY: 1 packages x 2 cores/pkg x 2 threads/core (2 total cores)
+OMP: Info #214: KMP_AFFINITY: OS proc to physical thread map:
+OMP: Info #171: KMP_AFFINITY: OS proc 0 maps to package 0 core 0 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 2 maps to package 0 core 0 thread 1 
+OMP: Info #171: KMP_AFFINITY: OS proc 1 maps to package 0 core 1 thread 0 
+OMP: Info #171: KMP_AFFINITY: OS proc 3 maps to package 0 core 1 thread 1 
+OMP: Info #250: KMP_AFFINITY: pid 26607 tid 26607 thread 0 bound to OS proc set 0
+WARNING: Logging before flag parsing goes to stderr.
+W1115 18:31:02.971785 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:114: The name tf.InteractiveSession is deprecated. Please use tf.compat.v1.InteractiveSession instead.
+
+2019-11-15 18:31:02.972271: I tensorflow/core/platform/cpu_feature_guard.cc:145] This TensorFlow binary is optimized with Intel(R) MKL-DNN to use the following CPU instructions in performance critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in non-MKL-DNN operations, rebuild TensorFlow with the appropriate compiler flags.
+2019-11-15 18:31:02.977977: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2712000000 Hz
+2019-11-15 18:31:02.978066: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55a6d41a0f40 executing computations on platform Host. Devices:
+2019-11-15 18:31:02.978077: I tensorflow/compiler/xla/service/service.cc:175]   StreamExecutor device (0): <undefined>, <undefined>
+2019-11-15 18:31:02.978147: I tensorflow/core/common_runtime/process_util.cc:115] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+W1115 18:31:03.194189 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/helper.py:26: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W1115 18:31:03.196763 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/helper.py:41: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W1115 18:31:03.197075 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1acc058048>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:03.373076 139755060700928 deprecation.py:506] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W1115 18:31:03.463141 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1acfe5b6a0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:03.507350 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:181: The name tf.variable_scope is deprecated. Please use tf.compat.v1.variable_scope instead.
+
+W1115 18:31:03.507651 139755060700928 deprecation.py:506] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:182: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W1115 18:31:03.518005 139755060700928 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/util/tf_should_use.py:193: initialize_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.variables_initializer` instead.
+2019-11-15 18:31:03.523467: W tensorflow/compiler/jit/mark_for_compilation_pass.cc:1412] (One-time warning): Not using XLA:CPU for cluster because envvar TF_XLA_FLAGS=--tf_xla_cpu_global_jit was not set.  If you want XLA:CPU, either set that envvar, or use experimental_jit_scope to enable XLA:CPU.  To confirm that XLA is active, pass --vmodule=xla_compilation_cache=1 (as a proper command-line flag, not via TF_XLA_FLAGS) or set the envvar XLA_FLAGS=--xla_hlo_profile.
+W1115 18:31:03.543627 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/models/g2k_lstm_mcr.py:12: The name tf.placeholder_with_default is deprecated. Please use tf.compat.v1.placeholder_with_default instead.
+
+W1115 18:31:03.603971 139755060700928 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/ops/variables.py:2618: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+Importing meta data of stored model in/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_60.ckpt-60.meta
+W1115 18:31:03.695431 139755060700928 deprecation_wrapper.py:119] From /home/serene/PycharmProjects/multimodaltraj_2/sample.py:215: The name tf.train.import_meta_graph is deprecated. Please use tf.compat.v1.train.import_meta_graph instead.
+
+W1115 18:31:07.414681 139755060700928 deprecation.py:323] From /home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/tensorflow/python/training/saver.py:1276: checkpoint_exists (from tensorflow.python.training.checkpoint_management) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use standard file APIs to check for files with this prefix.
+loading model:  ['/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_60.ckpt-60', '/home/serene/PycharmProjects/multimodaltraj_2/save/g2k_mcr_model_val_1.ckpt-1']
+********************** SAMPLING A NEW TRAJECTORY 0 ******************************
+OMP: Info #250: KMP_AFFINITY: pid 26607 tid 26620 thread 1 bound to OS proc set 1
+OMP: Info #250: KMP_AFFINITY: pid 26607 tid 26619 thread 2 bound to OS proc set 2
+ADE =  0.19922044099320738
+FDE =  0.6039470988170922
+Processed trajectory number :  0 out of  32  trajectories
+W1115 18:31:11.397263 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa5716c88>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:11.458142 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1b33bdf6d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 1 ******************************
+ADE =  0.19984364838087054
+FDE =  0.2851231880014228
+Processed trajectory number :  1 out of  32  trajectories
+W1115 18:31:15.600812 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa35a3080>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:15.659640 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa349dda0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 2 ******************************
+ADE =  0.1536556865173217
+FDE =  0.27678625171332255
+Processed trajectory number :  2 out of  32  trajectories
+W1115 18:31:19.862310 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa3216dd8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:19.919696 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa322af60>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 3 ******************************
+ADE =  0.06235621192234837
+FDE =  0.19571643746626197
+Processed trajectory number :  3 out of  32  trajectories
+W1115 18:31:24.224041 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2faa320>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:24.280774 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2f08710>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 4 ******************************
+ADE =  0.14034438008696984
+FDE =  0.217976405359162
+Processed trajectory number :  4 out of  32  trajectories
+W1115 18:31:28.635625 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa345de48>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:28.694414 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2d2d6d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 5 ******************************
+ADE =  0.07658281435691872
+FDE =  0.24700806981502177
+Processed trajectory number :  5 out of  32  trajectories
+W1115 18:31:33.134666 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa31b37b8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:33.196506 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2ab2c18>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 6 ******************************
+ADE =  0.4317996771347201
+FDE =  0.671204535726919
+Processed trajectory number :  6 out of  32  trajectories
+W1115 18:31:37.729766 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa28269e8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:37.787597 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa27bd7b8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 7 ******************************
+ADE =  0.24016175269153928
+FDE =  0.4011162665639633
+Processed trajectory number :  7 out of  32  trajectories
+W1115 18:31:42.378162 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2543be0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:42.437583 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa25736d8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 8 ******************************
+ADE =  0.26606479296692376
+FDE =  0.3647956801062
+Processed trajectory number :  8 out of  32  trajectories
+W1115 18:31:47.163351 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa3216b70>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:47.221946 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa22894a8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 9 ******************************
+ADE =  0.18317737105891904
+FDE =  0.530175556271539
+Processed trajectory number :  9 out of  32  trajectories
+W1115 18:31:51.921064 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2f99c88>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:51.980925 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2049b70>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 10 ******************************
+ADE =  0.16584882030451617
+FDE =  0.3006985405633942
+Processed trajectory number :  10 out of  32  trajectories
+W1115 18:31:56.766249 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa24dd2e8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:31:56.824448 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa1dd7ef0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 11 ******************************
+ADE =  0.2811620183596644
+FDE =  0.3814275830656568
+Processed trajectory number :  11 out of  32  trajectories
+W1115 18:32:01.659150 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa2208da0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:01.866369 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1acfe5b6a0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 12 ******************************
+ADE =  0.20812947510012106
+FDE =  0.2585494020020601
+Processed trajectory number :  12 out of  32  trajectories
+W1115 18:32:06.779703 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa1ff2a90>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:06.842598 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa18ccfd0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 13 ******************************
+ADE =  0.17718916176430205
+FDE =  0.19696049585863232
+Processed trajectory number :  13 out of  32  trajectories
+W1115 18:32:11.802182 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa1df3ac8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:11.860821 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa164de48>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 14 ******************************
+ADE =  0.10779744068057666
+FDE =  0.14317251728858182
+Processed trajectory number :  14 out of  32  trajectories
+W1115 18:32:16.875241 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa13c4e48>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:16.934717 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa13daf98>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 15 ******************************
+ADE =  0.16406117558836386
+FDE =  0.5288126681642266
+Processed trajectory number :  15 out of  32  trajectories
+W1115 18:32:22.016723 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa11d8c88>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:22.078822 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa115cb70>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 16 ******************************
+ADE =  0.1267876768208334
+FDE =  0.25736170827085003
+Processed trajectory number :  16 out of  32  trajectories
+W1115 18:32:27.294583 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa1622898>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:27.352514 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa0ea4438>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 17 ******************************
+ADE =  0.3260537753210515
+FDE =  0.8148396484415257
+Processed trajectory number :  17 out of  32  trajectories
+W1115 18:32:32.521595 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa1364828>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:32.581931 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa0c25860>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 18 ******************************
+ADE =  0.6076901879165684
+FDE =  1.7458947943886476
+Processed trajectory number :  18 out of  32  trajectories
+W1115 18:32:37.905117 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa09daf28>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:37.965405 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa09ef828>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 19 ******************************
+ADE =  0.5512106587877776
+FDE =  3.073624147345394
+Processed trajectory number :  19 out of  32  trajectories
+W1115 18:32:43.324556 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa0e23d30>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:43.383458 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa06d0898>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 20 ******************************
+ADE =  0.18960447405320308
+FDE =  0.4112125891261816
+Processed trajectory number :  20 out of  32  trajectories
+W1115 18:32:48.802919 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa0bcfac8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:48.861265 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa043d518>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 21 ******************************
+ADE =  0.24488695861233173
+FDE =  0.5540439651495069
+Processed trajectory number :  21 out of  32  trajectories
+W1115 18:32:54.340096 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa08cb3c8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:32:54.398068 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa01fdcc0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 22 ******************************
+ADE =  0.2270146733010127
+FDE =  0.41610218677570576
+Processed trajectory number :  22 out of  32  trajectories
+W1115 18:32:59.945871 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83fccb00>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:00.007341 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83f4def0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 23 ******************************
+ADE =  0.148632062253566
+FDE =  0.281553366276803
+Processed trajectory number :  23 out of  32  trajectories
+W1115 18:33:05.646739 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1aa0414e80>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:05.705533 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83caac18>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 24 ******************************
+ADE =  0.2350548742401028
+FDE =  0.26410531895269246
+Processed trajectory number :  24 out of  32  trajectories
+W1115 18:33:11.439551 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83b54240>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:11.500608 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83a6be80>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 25 ******************************
+ADE =  0.1279378878678189
+FDE =  0.24669754352234863
+Processed trajectory number :  25 out of  32  trajectories
+W1115 18:33:17.262626 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83996a90>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:17.320312 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a837e5b00>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 26 ******************************
+ADE =  0.2729170280293265
+FDE =  0.34617390216828137
+Processed trajectory number :  26 out of  32  trajectories
+W1115 18:33:23.174830 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a835e1be0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:23.231350 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a835164e0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 27 ******************************
+ADE =  0.23067127092702353
+FDE =  0.5069474827367192
+Processed trajectory number :  27 out of  32  trajectories
+W1115 18:33:29.290950 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a839d82e8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:29.349838 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a832cdd68>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 28 ******************************
+ADE =  0.1932581041606344
+FDE =  0.2749460544888002
+Processed trajectory number :  28 out of  32  trajectories
+W1115 18:33:35.307144 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83158080>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:35.366909 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a83066748>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 29 ******************************
+ADE =  0.34803034358485285
+FDE =  0.609073982028888
+Processed trajectory number :  29 out of  32  trajectories
+W1115 18:33:41.395189 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a82e5b7f0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:41.455370 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a82ddeba8>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 30 ******************************
+ADE =  0.6261034542794304
+FDE =  1.666342503736927
+Processed trajectory number :  30 out of  32  trajectories
+W1115 18:33:47.533600 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a82bd9c88>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W1115 18:33:47.591378 139755060700928 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7f1a832119b0>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+********************** SAMPLING A NEW TRAJECTORY 31 ******************************
+ADE =  0.3011220239082454
+FDE =  1.4294817465836611
+Processed trajectory number :  31 out of  32  trajectories
+Total mean error of the model is  0.24419907256159568
+Total final error of the model is  0.5781834886492622
+Saving results
+Saving results as .mat
+Traceback (most recent call last):
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 39, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: 'VisualizeUtils/tc_real_head_pose_z1_z2_ucy_social_lstm.mat'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/serene/PycharmProjects/multimodaltraj_2/sample.py", line 334, in <module>
+    main()
+  File "/home/serene/PycharmProjects/multimodaltraj_2/sample.py", line 330, in main
+    scipy.io.savemat(filesave, mdict={'data': results})
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 266, in savemat
+    with _open_file_context(file_name, appendmat, 'wb') as file_stream:
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/contextlib.py", line 112, in __enter__
+    return next(self.gen)
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 19, in _open_file_context
+    f, opened = _open_file(file_like, appendmat, mode)
+  File "/home/serene/anaconda3/envs/sgan-master/lib/python3.7/site-packages/scipy/io/matlab/mio.py", line 45, in _open_file
+    return open(file_like, mode), True
+FileNotFoundError: [Errno 2] No such file or directory: 'VisualizeUtils/tc_real_head_pose_z1_z2_ucy_social_lstm.mat'
+
+Process finished with exit code 1
+

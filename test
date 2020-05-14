@@ -1,0 +1,695 @@
+ents/self-growing-spatial-graph/venv/bin/python /home/siri0005/Documents/AOL_ovsc/train.py
+WARNING: Logging before flag parsing goes to stderr.
+W0509 18:10:32.095017 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/train.py:60: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+/home/siri0005/Documents/AOL_ovsc//data/ucy/zara/zara01//trajectories_0.cpkl
+session started
+Batch # 0 Started
+W0509 18:10:32.824439 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/relational_inf_models/nri_learned.py:163: The name tf.random_normal is deprecated. Please use tf.random.normal instead.
+
+W0509 18:10:32.833820 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/relational_inf_models/nri_learned.py:166: The name tf.train.GradientDescentOptimizer is deprecated. Please use tf.compat.v1.train.GradientDescentOptimizer instead.
+
+W0509 18:10:32.848843 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/train.py:152: The name tf.truncated_normal is deprecated. Please use tf.random.truncated_normal instead.
+
+W0509 18:10:33.114757 140526015543040 deprecation.py:506] From /home/siri0005/Documents/AOL_ovsc/train.py:180: calling RandomNormal.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0509 18:10:33.115331 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/helper.py:26: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+W0509 18:10:33.121492 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/helper.py:52: The name tf.AUTO_REUSE is deprecated. Please use tf.compat.v1.AUTO_REUSE instead.
+
+W0509 18:10:33.122303 140526015543040 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7fcdcc562470>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W0509 18:10:33.123538 140526015543040 rnn_cell.py:574] <tensorflow.contrib.rnn.python.ops.rnn_cell.GridLSTMCell object at 0x7fcdcc562f98>: Using a concatenated state is slower and will soon be deprecated.  Use state_is_tuple=True.
+W0509 18:10:33.515374 140526015543040 deprecation.py:506] From /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/init_ops.py:1251: calling VarianceScaling.__init__ (from tensorflow.python.ops.init_ops) with dtype is deprecated and will be removed in a future version.
+Instructions for updating:
+Call initializer instance with the dtype argument instead of passing it to the constructor
+W0509 18:10:33.930548 140526015543040 deprecation.py:323] From /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/variables.py:2618: Variable.initialized_value (from tensorflow.python.ops.variables) is deprecated and will be removed in a future version.
+Instructions for updating:
+Use Variable.read_value. Variables in 2.X are initialized automatically both in eager and graph (inside tf.defun) contexts.
+W0509 18:10:34.074102 140526015543040 deprecation.py:323] From /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/util/tf_should_use.py:193: initialize_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.variables_initializer` instead.
+W0509 18:10:34.485576 140526015543040 train.py:311] time taken to generate proposals:0.01832294464111328:
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+W0509 18:10:36.699760 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 1.6503076553344727
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:10:39.206582 140526015543040 train.py:363] BackPropagation with SGD took:0.10776591300964355
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  4.7679712772369385
+W0509 18:10:39.548230 140526015543040 train.py:311] time taken to generate proposals:0.049602508544921875:
+W0509 18:10:40.820555 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05739426612854004
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:10:43.348576 140526015543040 train.py:363] BackPropagation with SGD took:0.04794764518737793
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  3.8225700855255127
+W0509 18:10:43.750317 140526015543040 train.py:311] time taken to generate proposals:0.05536699295043945:
+W0509 18:10:45.055577 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.060997962951660156
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:10:47.302834 140526015543040 train.py:363] BackPropagation with SGD took:0.045169830322265625
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  3.5359020233154297
+W0509 18:10:47.626003 140526015543040 train.py:311] time taken to generate proposals:0.0444338321685791:
+W0509 18:10:48.624288 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.04359030723571777
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:10:50.668699 140526015543040 train.py:363] BackPropagation with SGD took:0.06967997550964355
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  3.0965821743011475
+W0509 18:10:51.151796 140526015543040 train.py:311] time taken to generate proposals:0.06337237358093262:
+W0509 18:10:52.800165 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05974149703979492
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:10:55.554555 140526015543040 train.py:363] BackPropagation with SGD took:0.06859683990478516
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  4.414262294769287
+W0509 18:10:56.102276 140526015543040 train.py:311] time taken to generate proposals:0.0930476188659668:
+W0509 18:10:57.890704 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.07102704048156738
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:11:00.614618 140526015543040 train.py:363] BackPropagation with SGD took:0.08935856819152832
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  4.552182912826538
+W0509 18:11:01.223405 140526015543040 train.py:311] time taken to generate proposals:0.0760648250579834:
+W0509 18:11:03.078637 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.056479454040527344
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:11:05.853366 140526015543040 train.py:363] BackPropagation with SGD took:0.09017801284790039
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  4.6385064125061035
+W0509 18:11:06.447957 140526015543040 train.py:311] time taken to generate proposals:0.0791020393371582:
+W0509 18:11:08.461435 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05719757080078125
+
+L2-Loss =  0.78809136
+FDE =  0.027559364
+W0509 18:11:11.291285 140526015543040 train.py:363] BackPropagation with SGD took:0.09374141693115234
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  4.871851682662964
+============================
+Memory used: 0.69 GB
+============================
+W0509 18:11:12.569061 140526015543040 train.py:444] 38.27536678314209 seconds to complete
+W0509 18:11:12.569453 140526015543040 train.py:446] Frame 1 Batch 0 of 91, Loss = <tf.Variable 'Variable_2:0' shape=(8, 8) dtype=float32_ref>, num_ped=9
+W0509 18:11:12.569577 140526015543040 train.py:451] Saving model at batch 0, epoch 0
+W0509 18:11:12.569754 140526015543040 deprecation.py:323] From /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/util/tf_should_use.py:193: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+W0509 18:11:12.901409 140526015543040 deprecation_wrapper.py:119] From /home/siri0005/Documents/AOL_ovsc/train.py:459: The name tf.train.Saver is deprecated. Please use tf.compat.v1.train.Saver instead.
+
+W0509 18:11:12.901649 140526015543040 deprecation.py:323] From /home/siri0005/Documents/AOL_ovsc/train.py:459: all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Please use tf.global_variables instead.
+W0509 18:11:13.625642 140526015543040 train.py:463] model saved to /home/siri0005/Documents/AOL_ovsc//save/ovsc/aol_ovsc_train_2_0_0.ckpt
+Batch # 1 Started
+W0509 18:11:16.027196 140526015543040 train.py:311] time taken to generate proposals:0.09446096420288086:
+W0509 18:11:18.904037 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06087803840637207
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:21.646358 140526015543040 train.py:363] BackPropagation with SGD took:0.14327526092529297
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  5.653137683868408
+W0509 18:11:22.397107 140526015543040 train.py:311] time taken to generate proposals:0.08308076858520508:
+W0509 18:11:24.564598 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.041335105895996094
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:27.447643 140526015543040 train.py:363] BackPropagation with SGD took:0.173980712890625
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  5.144956350326538
+W0509 18:11:28.388519 140526015543040 train.py:311] time taken to generate proposals:0.12159037590026855:
+W0509 18:11:31.615609 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05974268913269043
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:34.691724 140526015543040 train.py:363] BackPropagation with SGD took:0.16551804542541504
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.301934480667114
+W0509 18:11:35.696570 140526015543040 train.py:311] time taken to generate proposals:0.1261744499206543:
+W0509 18:11:39.173478 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05475306510925293
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:42.152871 140526015543040 train.py:363] BackPropagation with SGD took:0.17377185821533203
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.4404778480529785
+W0509 18:11:43.180039 140526015543040 train.py:311] time taken to generate proposals:0.12385916709899902:
+W0509 18:11:46.605965 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05901479721069336
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:49.617470 140526015543040 train.py:363] BackPropagation with SGD took:0.17649102210998535
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.460315942764282
+W0509 18:11:50.718874 140526015543040 train.py:311] time taken to generate proposals:0.1325986385345459:
+W0509 18:11:54.136330 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05611920356750488
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:11:57.051351 140526015543040 train.py:363] BackPropagation with SGD took:0.22620844841003418
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.432502031326294
+W0509 18:11:57.997884 140526015543040 train.py:311] time taken to generate proposals:0.10065889358520508:
+W0509 18:12:00.732397 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.060185909271240234
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:12:03.890227 140526015543040 train.py:363] BackPropagation with SGD took:0.19887232780456543
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.010043144226074
+W0509 18:12:05.104853 140526015543040 train.py:311] time taken to generate proposals:0.1591944694519043:
+W0509 18:12:08.992671 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06182146072387695
+
+L2-Loss =  0.8773254
+FDE =  0.027559364
+W0509 18:12:12.127385 140526015543040 train.py:363] BackPropagation with SGD took:0.20114660263061523
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  7.02883505821228
+============================
+Memory used: 0.94 GB
+============================
+W0509 18:12:14.064367 140526015543040 train.py:444] 58.798624753952026 seconds to complete
+Batch # 2 Started
+W0509 18:12:14.064696 140526015543040 train.py:446] Frame 1 Batch 1 of 91, Loss = <tf.Variable 'Variable_21:0' shape=(8, 8) dtype=float32_ref>, num_ped=10
+W0509 18:12:18.136301 140526015543040 train.py:311] time taken to generate proposals:0.16448450088500977:
+W0509 18:12:23.184781 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05229759216308594
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:12:26.292777 140526015543040 train.py:363] BackPropagation with SGD took:0.2336595058441162
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.138705015182495
+W0509 18:12:27.632400 140526015543040 train.py:311] time taken to generate proposals:0.1569807529449463:
+W0509 18:12:32.154294 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.04904937744140625
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:12:34.325630 140526015543040 train.py:363] BackPropagation with SGD took:0.1910872459411621
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  6.629617691040039
+W0509 18:12:35.485049 140526015543040 train.py:311] time taken to generate proposals:0.15893006324768066:
+W0509 18:12:40.414460 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06630921363830566
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:12:43.709938 140526015543040 train.py:363] BackPropagation with SGD took:0.28199052810668945
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.284940719604492
+W0509 18:12:45.262094 140526015543040 train.py:311] time taken to generate proposals:0.17258214950561523:
+W0509 18:12:50.397877 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.0631101131439209
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:12:53.743117 140526015543040 train.py:363] BackPropagation with SGD took:0.33733534812927246
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.503220558166504
+W0509 18:12:55.331573 140526015543040 train.py:311] time taken to generate proposals:0.21148061752319336:
+W0509 18:13:00.400840 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05625319480895996
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:13:03.493563 140526015543040 train.py:363] BackPropagation with SGD took:0.2764892578125
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.156730651855469
+W0509 18:13:05.038208 140526015543040 train.py:311] time taken to generate proposals:0.17155170440673828:
+W0509 18:13:09.706893 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.04444098472595215
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:13:12.108144 140526015543040 train.py:363] BackPropagation with SGD took:0.31137633323669434
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  7.134562015533447
+W0509 18:13:13.849456 140526015543040 train.py:311] time taken to generate proposals:0.18096351623535156:
+W0509 18:13:19.390742 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.07118725776672363
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:13:22.851239 140526015543040 train.py:363] BackPropagation with SGD took:0.33344173431396484
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  9.020313739776611
+W0509 18:13:24.549947 140526015543040 train.py:311] time taken to generate proposals:0.18970203399658203:
+W0509 18:13:30.331127 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05988264083862305
+
+L2-Loss =  1.0979943
+FDE =  0.027559364
+W0509 18:13:33.755738 140526015543040 train.py:363] BackPropagation with SGD took:0.33007025718688965
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  9.182080507278442
+============================
+Memory used: 1.16 GB
+============================
+W0509 18:13:36.391324 140526015543040 train.py:444] 79.65095663070679 seconds to complete
+W0509 18:13:36.391587 140526015543040 train.py:446] Frame 1 Batch 2 of 91, Loss = <tf.Variable 'Variable_40:0' shape=(8, 8) dtype=float32_ref>, num_ped=10
+Batch # 3 Started
+W0509 18:13:41.508425 140526015543040 train.py:311] time taken to generate proposals:0.18878436088562012:
+W0509 18:13:46.837506 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.060220956802368164
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:13:50.307823 140526015543040 train.py:363] BackPropagation with SGD took:0.3502330780029297
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.850292921066284
+W0509 18:13:52.186791 140526015543040 train.py:311] time taken to generate proposals:0.20235610008239746:
+W0509 18:13:58.471025 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06183147430419922
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:14:02.058860 140526015543040 train.py:363] BackPropagation with SGD took:0.36608290672302246
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  9.882731676101685
+W0509 18:14:03.996429 140526015543040 train.py:311] time taken to generate proposals:0.20337224006652832:
+W0509 18:14:10.348756 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05800461769104004
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:14:13.670479 140526015543040 train.py:363] BackPropagation with SGD took:0.3594801425933838
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  9.661632061004639
+W0509 18:14:15.542889 140526015543040 train.py:311] time taken to generate proposals:0.2047591209411621:
+W0509 18:14:20.749992 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.07532882690429688
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:14:24.308468 140526015543040 train.py:363] BackPropagation with SGD took:0.38562750816345215
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  8.802663087844849
+W0509 18:14:26.302192 140526015543040 train.py:311] time taken to generate proposals:0.2225487232208252:
+W0509 18:14:33.065517 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.057029008865356445
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:14:36.681994 140526015543040 train.py:363] BackPropagation with SGD took:0.3937819004058838
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  10.365712404251099
+W0509 18:14:38.780706 140526015543040 train.py:311] time taken to generate proposals:0.21138954162597656:
+W0509 18:14:45.525119 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06156206130981445
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:14:48.946023 140526015543040 train.py:363] BackPropagation with SGD took:0.41269516944885254
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  10.166090726852417
+W0509 18:14:51.054955 140526015543040 train.py:311] time taken to generate proposals:0.21341180801391602:
+W0509 18:14:56.662482 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05408430099487305
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:15:00.278122 140526015543040 train.py:363] BackPropagation with SGD took:0.3924591541290283
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  9.252347946166992
+W0509 18:15:02.423733 140526015543040 train.py:311] time taken to generate proposals:0.25438427925109863:
+W0509 18:15:09.484109 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06392431259155273
+
+L2-Loss =  1.0594231
+FDE =  0.027559364
+W0509 18:15:13.235149 140526015543040 train.py:363] BackPropagation with SGD took:0.4360175132751465
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  10.833521604537964
+============================
+Memory used: 1.39 GB
+============================
+W0509 18:15:16.378690 140526015543040 train.py:444] 96.68786549568176 seconds to complete
+atch # 4 Started
+[38;2;255;107;104mW0509 18:15:16.379044 140526015543040 train.py:446] Frame 1 Batch 3 of 91, Loss = <tf.Variable 'Variable_59:0' shape=(8, 8) dtype=float32_ref>, num_ped=10
+W0509 18:15:22.742825 140526015543040 train.py:311] time taken to generate proposals:0.22010135650634766:
+W0509 18:15:29.890283 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.043196678161621094
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:15:33.329423 140526015543040 train.py:363] BackPropagation with SGD took:0.46378588676452637
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  10.679580926895142
+W0509 18:15:35.749732 140526015543040 train.py:311] time taken to generate proposals:0.2492656707763672:
+W0509 18:15:43.680156 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05933642387390137
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:15:47.522103 140526015543040 train.py:363] BackPropagation with SGD took:0.4652669429779053
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  11.79132080078125
+W0509 18:15:49.902015 140526015543040 train.py:311] time taken to generate proposals:0.23817086219787598:
+W0509 18:15:57.766695 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.060230255126953125
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:16:01.375967 140526015543040 train.py:363] BackPropagation with SGD took:0.45665669441223145
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  11.426538228988647
+W0509 18:16:03.348461 140526015543040 train.py:311] time taken to generate proposals:0.19060134887695312:
+W0509 18:16:10.748064 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.0634300708770752
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:16:14.610738 140526015543040 train.py:363] BackPropagation with SGD took:0.49489641189575195
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  11.480584144592285
+W0509 18:16:17.106845 140526015543040 train.py:311] time taken to generate proposals:0.2670750617980957:
+W0509 18:16:25.485592 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.058480024337768555
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:16:29.333489 140526015543040 train.py:363] BackPropagation with SGD took:0.49904441833496094
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  12.26003646850586
+W0509 18:16:31.770224 140526015543040 train.py:311] time taken to generate proposals:0.24216938018798828:
+W0509 18:16:39.074170 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.04483509063720703
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:16:42.725260 140526015543040 train.py:363] BackPropagation with SGD took:0.5000138282775879
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  11.052741050720215
+W0509 18:16:45.267866 140526015543040 train.py:311] time taken to generate proposals:0.2649216651916504:
+W0509 18:16:53.915724 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05658364295959473
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:16:57.881438 140526015543040 train.py:363] BackPropagation with SGD took:0.5542924404144287
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  12.619287014007568
+W0509 18:17:00.546041 140526015543040 train.py:311] time taken to generate proposals:0.29775166511535645:
+W0509 18:17:09.252827 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05723762512207031
+
+L2-Loss =  1.0335605
+FDE =  0.027559364
+W0509 18:17:12.566725 140526015543040 train.py:363] BackPropagation with SGD took:0.3721768856048584
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  11.846068382263184
+============================
+Memory used: 1.60 GB
+============================
+W0509 18:17:15.746896 140526015543040 train.py:444] 115.15373396873474 seconds to complete
+W0509 18:17:15.747395 140526015543040 train.py:446] Frame 1 Batch 4 of 91, Loss = <tf.Variable 'Variable_78:0' shape=(8, 8) dtype=float32_ref>, num_ped=10
+Batch # 5 Started
+W0509 18:17:23.558498 140526015543040 train.py:311] time taken to generate proposals:0.28394174575805664:
+W0509 18:17:33.539048 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.0701143741607666
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:17:37.678663 140526015543040 train.py:363] BackPropagation with SGD took:0.585521936416626
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.126455307006836
+W0509 18:17:40.447887 140526015543040 train.py:311] time taken to generate proposals:0.3007054328918457:
+W0509 18:17:48.853806 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.043163299560546875
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:17:52.796763 140526015543040 train.py:363] BackPropagation with SGD took:0.5762224197387695
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  12.434265375137329
+W0509 18:17:55.694342 140526015543040 train.py:311] time taken to generate proposals:0.28789544105529785:
+W0509 18:18:05.452025 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06115579605102539
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:18:09.687657 140526015543040 train.py:363] BackPropagation with SGD took:0.6108129024505615
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.006786584854126
+W0509 18:18:12.655909 140526015543040 train.py:311] time taken to generate proposals:0.3164675235748291:
+W0509 18:18:22.031368 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.042755126953125
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:18:24.983555 140526015543040 train.py:363] BackPropagation with SGD took:0.4801661968231201
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  12.365294694900513
+W0509 18:18:28.015106 140526015543040 train.py:311] time taken to generate proposals:0.2987213134765625:
+W0509 18:18:38.361317 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05890917778015137
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:18:42.610697 140526015543040 train.py:363] BackPropagation with SGD took:0.6102895736694336
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.606104612350464
+W0509 18:18:45.675024 140526015543040 train.py:311] time taken to generate proposals:0.3098483085632324:
+W0509 18:18:55.595761 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05720973014831543
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:18:58.804613 140526015543040 train.py:363] BackPropagation with SGD took:0.45806384086608887
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  12.938976049423218
+W0509 18:19:01.542377 140526015543040 train.py:311] time taken to generate proposals:0.32143616676330566:
+W0509 18:19:11.934885 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06084752082824707
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:19:16.212115 140526015543040 train.py:363] BackPropagation with SGD took:0.6475875377655029
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.675679922103882
+W0509 18:19:19.391893 140526015543040 train.py:311] time taken to generate proposals:0.31809091567993164:
+W0509 18:19:29.553438 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.058020830154418945
+
+L2-Loss =  0.9759161
+FDE =  0.027559364
+W0509 18:19:33.226761 140526015543040 train.py:363] BackPropagation with SGD took:0.4620378017425537
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  13.608553171157837
+============================
+Memory used: 1.83 GB
+============================
+W0509 18:19:36.747039 140526015543040 train.py:444] 135.98009324073792 seconds to complete
+W0509 18:19:36.747364 140526015543040 train.py:446] Frame 1 Batch 5 of 91, Loss = <tf.Variable 'Variable_97:0' shape=(8, 8) dtype=float32_ref>, num_ped=9
+W0509 18:19:36.747463 140526015543040 train.py:451] Saving model at batch 5, epoch 0
+W0509 18:19:41.773722 140526015543040 train.py:463] model saved to /home/siri0005/Documents/AOL_ovsc//save/ovsc/aol_ovsc_train_2_0_5.ckpt
+Batch # 6 Started
+W0509 18:19:51.094185 140526015543040 train.py:311] time taken to generate proposals:0.33415865898132324:
+W0509 18:20:02.841591 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05560755729675293
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:20:07.106741 140526015543040 train.py:363] BackPropagation with SGD took:0.6451892852783203
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  15.75216031074524
+W0509 18:20:09.627690 140526015543040 train.py:311] time taken to generate proposals:0.2590019702911377:
+W0509 18:20:20.837891 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.060625553131103516
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:20:25.321838 140526015543040 train.py:363] BackPropagation with SGD took:0.7025051116943359
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  15.953497648239136
+W0509 18:20:28.897881 140526015543040 train.py:311] time taken to generate proposals:0.3505091667175293:
+W0509 18:20:40.428297 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.0550384521484375
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:20:44.141665 140526015543040 train.py:363] BackPropagation with SGD took:0.49811625480651855
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.961979866027832
+W0509 18:20:47.029108 140526015543040 train.py:311] time taken to generate proposals:0.348895788192749:
+W0509 18:20:58.729263 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.05840587615966797
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:21:03.277952 140526015543040 train.py:363] BackPropagation with SGD took:0.7075290679931641
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  16.28304171562195
+W0509 18:21:06.895875 140526015543040 train.py:311] time taken to generate proposals:0.3621394634246826:
+W0509 18:21:18.331342 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.042233943939208984
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:21:21.733005 140526015543040 train.py:363] BackPropagation with SGD took:0.7413492202758789
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  14.836888074874878
+W0509 18:21:25.328888 140526015543040 train.py:311] time taken to generate proposals:0.3485426902770996:
+W0509 18:21:37.302530 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.06071114540100098
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:21:41.859536 140526015543040 train.py:363] BackPropagation with SGD took:0.7737472057342529
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  16.59019422531128
+W0509 18:21:45.509465 140526015543040 train.py:311] time taken to generate proposals:0.35709381103515625:
+W0509 18:21:56.288748 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.062024593353271484
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:22:00.943157 140526015543040 train.py:363] BackPropagation with SGD took:0.7741193771362305
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  15.511532545089722
+W0509 18:22:04.705100 140526015543040 train.py:311] time taken to generate proposals:0.3852717876434326:
+W0509 18:22:17.037227 140526015543040 train.py:342]
+ time taken to recommend best adjacency proposal: 0.057192087173461914
+
+L2-Loss =  0.73276937
+FDE =  0.027559364
+W0509 18:22:21.654630 140526015543040 train.py:363] BackPropagation with SGD took:0.7677671909332275
+
+Time taken evaluate 10 predictions per each pedestrian + Social recommendation =  16.98045039176941
+============================
+Memory used: 2.05 GB
+============================
+W0509 18:22:26.237238 140526015543040 train.py:444] 158.5581841468811 seconds to complete
+W0509 18:22:26.237543 140526015543040 train.py:446] Frame 1 Batch 6 of 91, Loss = <tf.Variable 'Variable_116:0' shape=(8, 8) dtype=float32_ref>, num_ped=6
+Batch # 7 Started
+W0509 18:22:35.069450 140526015543040 train.py:311] time taken to generate proposals:0.36858677864074707:
+
+Entered inner_loop_fn()
+
+calculated Euclidean Error ADE+FDE
+Traceback (most recent call last):
+  File "/home/siri0005/Documents/AOL_ovsc/train.py", line 904, in <module>
+    main()
+  File "/home/siri0005/Documents/AOL_ovsc/train.py", line 47, in main
+    train(args.parser.parse_args())
+  File "/home/siri0005/Documents/AOL_ovsc/train.py", line 340, in train
+    target_traj, nri_obj.adj_mat_vec)
+  File "/home/siri0005/Documents/AOL_ovsc/relational_inf_models/nri_learned.py", line 201, in assess_rcmndr
+    euc_loss, fde_loss = evaluate(sess, graph_t, params, i, i0, adj_mat_vec)
+  File "/home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/eager/function.py", line 1323, in __call__
+    graph_function, args, kwargs = self._maybe_define_function(args, kwargs)
+  File "/home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/eager/function.py", line 1652, in _maybe_define_function
+    graph_function = self._create_graph_function(args, kwargs)
+  File "/home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/eager/function.py", line 1545, in _create_graph_function
+    capture_by_value=self._capture_by_value),
+  File "/home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/func_graph.py", line 715, in func_graph_from_py_func
+    func_outputs = python_func(*func_args, **func_kwargs)
+  File "/home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/func_graph.py", line 705, in wrapper
+    raise e.ag_error_metadata.to_exception(type(e))
+ValueError: in converted code:
+
+    /home/siri0005/Documents/AOL_ovsc/relational_inf_models/nri_learned.py:78 inner_loop_fn *
+        euc_loss = pred_path - target_traj #), axis=0)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/control_flow_ops.py:3420 while_loop
+        return_same_structure=return_same_structure)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/while_v2.py:179 while_loop
+        add_control_dependencies=add_control_dependencies)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/func_graph.py:715 func_graph_from_py_func
+        func_outputs = python_func(*func_args, **func_kwargs)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/while_v2.py:157 wrapped_body
+        outputs = body(*_pack_sequence_as(orig_loop_vars, args))
+    /tmp/tmpx6quyjim.py:55 inner_loop_fn
+        fde, euc_loss = ag__.if_stmt(cond_1, if_true_1, if_false_1, get_state_1, set_state_1)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/autograph/operators/control_flow.py:441 if_stmt
+        return _py_if_stmt(cond, body, orelse)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/autograph/operators/control_flow.py:528 _py_if_stmt
+        return body() if cond else orelse()
+    /tmp/tmpx6quyjim.py:49 if_true_1
+        euc_loss = pred_path - target_traj
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/math_ops.py:884 binary_op_wrapper
+        return func(x, y, name=name)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/ops/gen_math_ops.py:10855 sub
+        "Sub", x=x, y=y, name=name)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/op_def_library.py:788 _apply_op_helper
+        op_def=op_def)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/func_graph.py:464 create_op
+        compute_device=compute_device)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/util/deprecation.py:507 new_func
+        return func(*args, **kwargs)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/ops.py:3616 create_op
+        op_def=op_def)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/ops.py:2027 __init__
+        control_input_ops)
+    /home/siri0005/Documents/self-growing-spatial-graph/venv/lib/python3.5/site-packages/tensorflow/python/framework/ops.py:1867 _create_c_op
+        raise ValueError(str(e))
+
+    ValueError: Dimensions must be equal, but are 8 and 6 for 'sub' (op: 'Sub') with input shapes: [8,12,2], [6,12,2].
+
+
+Process finished with exit code 1
+

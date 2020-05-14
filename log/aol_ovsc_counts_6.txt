@@ -1,0 +1,11 @@
+Dataset 6= ADE steps 40
+FDE steps = 0Dataset 6= ADE steps 80
+FDE steps = 0Dataset 6= ADE steps 120
+FDE steps = 0Dataset 6= ADE steps 160
+FDE steps = 0Dataset 6= ADE steps 200
+FDE steps = 0Dataset 6= ADE steps 240
+FDE steps = 0Dataset 6= ADE steps 280
+FDE steps = 0Dataset 6= ADE steps 320
+FDE steps = 0Dataset 6= ADE steps 360
+FDE steps = 0Dataset 6= ADE steps 400
+FDE steps = 0
