@@ -17,28 +17,30 @@ class DataLoader():
         datasets : The indices of the datasets to use
         forcePreProcess : Flag to forcefully preprocess the data again from csv files
         '''
-        self.parent_dir = '/home/siri0005/Documents/AOL_ovsc/'
+        self.parent_dir = '/home/siri0005/Documents/traj-rcmndr-osc/'
         # '/home/serene/PycharmProjects/multimodaltraj_2/data'
         # '/fakepath/Documents/self-growing-spatial-graph/self-growing-gru-offline_avgPool/data'
         # '/Data/stanford_campus_dataset/annotations/'
         # List of data directories where world-coordinates data is stored
         parent_dir = self.parent_dir + '/data'
         self.data_dirs = [
-           parent_dir + '/eth/hotel/',
-           parent_dir + '/eth/univ/',
-           parent_dir + '/ucy/zara/zara01/',
-           parent_dir + '/ucy/zara/zara02/',
-           parent_dir + '/ucy/zara/zara03/',
-           parent_dir + '/ucy/univ/',
-           parent_dir + '/town_center/',
-           parent_dir + '/annotation_tc.txt'
+            parent_dir + '/stanford/bookstore/',
+            parent_dir + '/stanford/hyang/',
+            parent_dir + '/stanford/coupa/',
+            parent_dir + '/stanford/deathCircle/',
+            parent_dir + '/stanford/gates/',
+            parent_dir + '/stanford/nexus/'
             ]
-        #self.parent_dir + '/stanford/bookstore/',
-        #self.parent_dir + '/stanford/hyang/',
-        #self.parent_dir + '/stanford/coupa/',
-        #self.parent_dir + '/stanford/deathCircle/',
-        #self.parent_dir + '/stanford/gates/',
-        #self.parent_dir + '/stanford/nexus/',
+
+        # parent_dir + '/eth/hotel/',
+        # parent_dir + '/eth/univ/',
+        # parent_dir + '/ucy/zara/zara01/',
+        # parent_dir + '/ucy/zara/zara02/',
+        # parent_dir + '/ucy/zara/zara03/',
+        # parent_dir + '/ucy/univ/',
+        # parent_dir + '/town_center/',
+        # parent_dir + '/annotation_tc.txt'
+
         #self.parent_dir + '/crowds/'
         #self.parent_dir + '/sdd/pedestrians/quad/',
         #self.parent_dir + '/sdd/pedestrians/hyang/',
@@ -64,7 +66,7 @@ class DataLoader():
         self.seq_length = args.seq_length
         self.pred_len = args.pred_len
         self.obs_len = args.obs_len
-        self.diff = self.obs_len
+        self.diff = self.pred_len
 
         # Validation arguments
         # self.val_fraction = 0.2
@@ -76,14 +78,15 @@ class DataLoader():
             name = '/val_trajectories_{0}.cpkl'
 
         if os.path.isdir(self.current_dir):
-            files = self.used_data_dirs[start] + "*.csv"  # '.txt'
+            files = self.used_data_dirs[start] + "*.txt"  # '.' csv
             data_files = sorted(glob.glob(files))
             if sel is None:
                 if len(data_files) > 1:
                     print([x for x in range(len(data_files))])
                     print(data_files)
-                    sel = input('select which file you want for loading:')
-
+                    self.sel = input('select which file you want for loading:')
+            else:
+                self.sel = sel
             self.dataset_pointer = sel #str(data_files[int(sel)])[-5]
             self.load_dataset(data_files[int(sel)], val=infer)
             self.sel_file = self.current_dir + name.format(int(self.dataset_pointer))
@@ -123,7 +126,7 @@ class DataLoader():
 
         f = open(data_file, 'rb')
 
-        self.raw_data = np.genfromtxt(fname=data_file, delimiter=',') # remove ,
+        self.raw_data = np.genfromtxt(fname=data_file).transpose() # remove , delimiter=','
         self.len = self.raw_data.shape[1]
         self.max = int(self.raw_data.shape[1]*  0.7)#
         self.val_max = int(self.raw_data.shape[1] * 0.3)
