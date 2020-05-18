@@ -126,7 +126,7 @@ class DataLoader():
 
         f = open(data_file, 'rb')
 
-        self.raw_data = np.genfromtxt(fname=data_file).transpose() # remove , delimiter=','
+        self.raw_data = np.genfromtxt(fname=data_file, delimiter=',').transpose() # remove
         self.len = self.raw_data.shape[1]
         self.max = int(self.raw_data.shape[1]*  0.7)#
         self.val_max = int(self.raw_data.shape[1] * 0.3)

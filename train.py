@@ -73,20 +73,20 @@ def train(args):
             num_end_targets = 0
             attn = []
 
-            datasets = {1}
+            datasets = {5}
 
             for d in datasets:
-                dataloader = load.DataLoader(args=args, datasets=[0, 1, 2, 3, 4, 5], start=d, sel=0)
+                dataloader = load.DataLoader(args=args, datasets=[0, 1, 2, 3, 4, 5], start=d, sel=4)
                 parent_dir = dataloader.parent_dir
                 time_log = open(os.path.join(parent_dir, dataloader.used_data_dirs[d], 'training_Tlog.txt'), 'w')
-                log_count = parent_dir + '/log/stanford/hyang/aol_osc_counts_{0}.txt'.format(
-                    d)
+                log_count = parent_dir + '/log/stanford/nexus/aol_osc_counts_{0}_{1}.txt'.format(
+                    d, dataloader.sel)
                 log_count_f = open(log_count, 'w')
-                log_dir = open(parent_dir + '/log/stanford/hyang/aol_osc_ade_log_kfold_{0}.csv'.format(
-                    d), 'w')
-                log_dir_fde = open(parent_dir + '/log/stanford/hyang/aol_osc_fde_log_kfold_{0}.csv'.format(
-                    d), 'w')
-                save_dir = parent_dir+'/save/stanford/hyang/'
+                log_dir = open(parent_dir + '/log/stanford/nexus/aol_osc_ade_log_kfold_{0}_{1}.csv'.format(
+                    d, dataloader.sel), 'w')
+                log_dir_fde = open(parent_dir + '/log/stanford/nexus/aol_osc_fde_log_kfold_{0}_{1}.csv'.format(
+                    d, dataloader.sel), 'w')
+                save_dir = parent_dir+'/save/stanford/nexus/'
 
                 # traj = dataloader.load_trajectories(data_file=dataloader.sel_file)
 
@@ -123,7 +123,7 @@ def train(args):
                             hidden_state = tf.random_normal(shape=(args.num_freq_blocks, args.rnn_size)) #
                             hidden_filters = tf.truncated_normal(shape=[8, 1, 1], dtype=tf.float32)
                             
-                            ctxt_img_path = glob.glob(dataloader.current_dir + 'hyang_{}.jpg'.format(dataloader.sel))
+                            ctxt_img_path = glob.glob(dataloader.current_dir + 'nexus_{}.jpg'.format(dataloader.sel))
                             ctxt_img = tf.convert_to_tensor(imread(ctxt_img_path[0]), dtype=tf.float32)
 
                             ctxt_img_pd = tf.convert_to_tensor(
@@ -371,7 +371,7 @@ def train(args):
                             print('============================')
                             print("Memory used: {:.2f} GB".format(pid.memory_info().rss / 1024 / 1024 / 1024))
                             print('============================')
-                        
+                            
                             
                             # tf.reset_default_graph()
                             batch, target_traj, _ = dataloader.next_step()
