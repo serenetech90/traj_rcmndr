@@ -13,7 +13,8 @@ spatio-temporal graphs. It estimates the interaction strength between pedestrian
 Short paper was accepted at the IEEE International Conference on Image Processing (IEEE - ICIP) 2021.
 Complete paper is under review for the International Journal of Computer Vision (IJCV) 2021.
 
-Stick around for future updates and more evaluations!! <div style='align:center'>
+Stick around for future updates and more evaluations!! 
+<div style='text-align:center'>
   <img src='/stay_tuned_gif.gif'/, width=100px, height=100px>
 </div>
 
