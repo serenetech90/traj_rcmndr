@@ -14,9 +14,9 @@ Short paper was accepted at the IEEE International Conference on Image Processin
 Complete paper is under review for the International Journal of Computer Vision (IJCV) 2021.
 
 Stick around for future updates and more evaluations!! 
-                                                        <div style='text-align:center; margin-left:45%'>
-                                                          <img src='/stay_tuned_gif.gif'/, width=100px, height=100px>
-                                                        </div>
+<div style='text-align:center; margin-left:450px'>
+  <img src='/stay_tuned_gif.gif'/, width=100px, height=100px>
+</div>
 
 
 
